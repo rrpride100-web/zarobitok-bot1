@@ -26,48 +26,45 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     if query.data == "info":
         await query.edit_message_text(
-            f"📖 *ОЗНАЙОМЛЕННЯ*\n\n"
-            f"💰 Це легальна партнерська програма.\n"
-            f"Ми співпрацюємо з офіційними МФО.\n\n"
-            f"*Як заробляти:*\n"
-            f"1️⃣ Переходь за посиланням\n"
-            f"2️⃣ Реєструєшся\n"
-            f"3️⃣ Береш мінімальну позику\n"
-            f"4️⃣ Отримуєш виплату\n\n"
-            f"❓ Підтримка: @cpa_rm\n\n"
-            f"👇 Натисни *'НАЗАД'*:",
-            parse_mode="Markdown",
+            "📖 ОЗНАЙОМЛЕННЯ\n\n"
+            "💰 Це легальна партнерська програма.\n"
+            "Ми співпрацюємо з офіційними МФО.\n\n"
+            "Як заробляти:\n"
+            "1️⃣ Переходь за посиланням\n"
+            "2️⃣ Реєструєшся\n"
+            "3️⃣ Береш мінімальну позику\n"
+            "4️⃣ Отримуєш виплату\n\n"
+            "❓ Підтримка: @cpa_rm\n\n"
+            "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
             ]])
         )
     elif query.data == "rules":
         await query.edit_message_text(
-            f"📜 *УМОВИ УЧАСТІ*\n\n"
-            f"🔞 Вік: 18+\n"
-            f"📍 Географія: Україна (ВПН за кордоном)\n"
-            f"💳 Картка: українська (для Bank ID)\n"
-            f"🚫 Без прострочених кредитів\n"
-            f"⚠️ Реєструйся тільки за нашими посиланнями\n\n"
-            f"❓ Підтримка: @cpa_rm\n\n"
-            f"👇 Натисни *'НАЗАД'*:",
-            parse_mode="Markdown",
+            "📜 УМОВИ УЧАСТІ\n\n"
+            "🔞 Вік: 18+\n"
+            "📍 Географія: Україна (ВПН за кордоном)\n"
+            "💳 Картка: українська (для Bank ID)\n"
+            "🚫 Без прострочених кредитів\n"
+            "⚠️ Реєструйся тільки за нашими посиланнями\n\n"
+            "❓ Підтримка: @cpa_rm\n\n"
+            "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
             ]])
         )
     elif query.data == "howto":
         await query.edit_message_text(
-            f"💰 *ЯК ПРАВИЛЬНО РОБИТИ*\n\n"
-            f"1️⃣ Переходь на сайт через кнопку 'ПЕРЕЙТИ ДО МФО'\n"
-            f"2️⃣ Реєструєшся, підтверджуєш Bank ID\n"
-            f"3️⃣ Береш позику 500-1000 грн на 7-15 днів\n"
-            f"4️⃣ Отримуєш гроші на картку (це АПРУВ)\n"
-            f"5️⃣ Погашаєш кредит через 1-2 дні (відсотки повернемо)\n\n"
-            f"💰 Чим більше апрувів - тим більше грошей!\n\n"
-            f"❓ Підтримка: @cpa_rm\n\n"
-            f"👇 Натисни *'НАЗАД'*:",
-            parse_mode="Markdown",
+            "💰 ЯК ПРАВИЛЬНО РОБИТИ\n\n"
+            "1️⃣ Переходь на сайт через кнопку 'ПЕРЕЙТИ ДО МФО'\n"
+            "2️⃣ Реєструєшся, підтверджуєш Bank ID\n"
+            "3️⃣ Береш позику 500-1000 грн на 7-15 днів\n"
+            "4️⃣ Отримуєш гроші на картку (це АПРУВ)\n"
+            "5️⃣ Погашаєш кредит через 1-2 дні (відсотки повернемо)\n\n"
+            "💰 Чим більше апрувів - тим більше грошей!\n\n"
+            "❓ Підтримка: @cpa_rm\n\n"
+            "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
             ]])
@@ -80,8 +77,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("🎯 ПЕРЕЙТИ ДО МФО", url=MFO_URL)]
         ]
         await query.edit_message_text(
-            f"🔥 *ГОЛОВНЕ МЕНЮ*\n\nОбери дію:\n\n❓ Підтримка: @cpa_rm",
-            parse_mode="Markdown",
+            "🔥 ГОЛОВНЕ МЕНЮ\n\nОбери дію:\n\n❓ Підтримка: @cpa_rm",
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
 
