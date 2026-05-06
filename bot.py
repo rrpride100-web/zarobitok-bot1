@@ -16,7 +16,7 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         [InlineKeyboardButton("🎯 ПЕРЕЙТИ ДО МФО", url=MFO_URL)]
     ]
     await update.message.reply_text(
-        f"🔥 Вітаю, {user.first_name}! 🔥\n\nОбери дію:\n\n❓ Підтримка: @cpa_rm",
+        f"🔥 Вітаю, {user.first_name}! 🔥\n\nОбери дію:\n\n❓ Підтримка: @maybe_manager",
         reply_markup=InlineKeyboardMarkup(keyboard)
     )
 
