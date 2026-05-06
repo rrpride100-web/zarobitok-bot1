@@ -34,7 +34,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "2️⃣ Реєструєшся\n"
             "3️⃣ Береш мінімальну позику\n"
             "4️⃣ Отримуєш виплату\n\n"
-            "❓ Підтримка: @cpa_rm\n\n"
+            "❓ Підтримка: @maybe_manager\n\n"
             "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
@@ -44,11 +44,11 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.edit_message_text(
             "📜 УМОВИ УЧАСТІ\n\n"
             "🔞 Вік: 18+\n"
-            "📍 Географія: Україна (ВПН за кордоном)\n"
+            "📍 ГЕО: Україна (ВПН за кордоном)\n"
             "💳 Картка: українська (для Bank ID)\n"
             "🚫 Без прострочених кредитів\n"
             "⚠️ Реєструйся тільки за нашими посиланнями\n\n"
-            "❓ Підтримка: @cpa_rm\n\n"
+            "❓ Підтримка: @maybe_manager\n\n"
             "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
@@ -63,7 +63,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             "4️⃣ Отримуєш гроші на картку (це УСПІШНО)\n"
             "5️⃣ Погашаєш кредит через 1-2 дні (відсотки повернемо)\n\n"
             "💰 Чим більше успішних операцій - тим більше грошей!\n\n"
-            "❓ Підтримка: @cpa_rm\n\n"
+            "❓ Підтримка: @maybe_manager\n\n"
             "👇 Натисни НАЗАД",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("◀️ НАЗАД", callback_data="back_to_main")
@@ -77,7 +77,7 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
             [InlineKeyboardButton("🎯 ПЕРЕЙТИ ДО МФО", url=MFO_URL)]
         ]
         await query.edit_message_text(
-            "🔥 ГОЛОВНЕ МЕНЮ\n\nОбери дію:\n\n❓ Підтримка: @cpa_rm",
+            "🔥 ГОЛОВНЕ МЕНЮ\n\nОбери дію:\n\n❓ Підтримка: @maybe_manager",
             reply_markup=InlineKeyboardMarkup(keyboard)
         )
 
